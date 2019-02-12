@@ -30,18 +30,13 @@ A Developer Hub (Dev Hub) is the main Salesforce org that you and your team use 
     * -a is for alias, passing argument SFLX
     
 * Pull a project from GIT
-    * mkdir LX [making a directory]
+    * mkdir LX [making a directory on your desktop or ducuments]
     * cd LX [open the directory]
     * git clone https://github.com/godarapradeep/lightning [clone sflx project]
     * cd bootcamp [open the directory]
-    * git checkout -b my_feature [create a new branch]
-    
- * Creating a project (skip this if you pulled the project from Repository)
-    * sfdx force:project:create --projectname bootcamp
 
  * Create and Test Our Scratch Org
-    * cat config/project-scratch-def.json [open config file]
-    * sfdx force:org:create -s -f config/project-scratch-def.json -a bootcamp-org
+    * sfdx force:org:create -s -f config/project-scratch-def.json -a bootcamp
         * -s is for scratch org
         * -f is for config file, passing argument
         * -a is for alias
