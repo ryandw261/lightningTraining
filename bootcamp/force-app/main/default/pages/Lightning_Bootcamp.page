@@ -4,7 +4,7 @@
       <apex:slds />
    </head>  
    
-  <!-- LDS -->
+  <!-- LDS --><!--
   <div class="slds-form-element"> 
    <label class="slds-form-element__label" for="text-input-id-1">Input Label</label> 
     <div class="slds-form-element__control"> 
@@ -13,7 +13,7 @@
     </div>
     <br/>
     <br/>
-  <!-- VF -->
+  <!-- VF --><!--
   <apex:form >
     <apex:outputLabel value="Visualforce Label"></apex:outputLabel>
     <apex:inputText value="{!acc.Name}"/>
@@ -31,7 +31,7 @@
     <br/>
     
     <!--Creating a Form --><!--
-    <div class="slds-form slds-form_horizontal">
+    <div class="slds-form slds-form_stacked">
   <div class="slds-form-element">
     <label class="slds-form-element__label" for="input-id-01">Text Input</label>
     <div class="slds-form-element__control">
@@ -46,7 +46,7 @@
  </div>
 </div>-->
 
-<!--Field Set><!--
+<!--Field Set--><!--
 <fieldset class="slds-form-element">
     <legend class="slds-form-element__legend slds-form-element__label">Checkbox Group label</legend>
     <div class="slds-form-element__control">
@@ -69,7 +69,7 @@
   
   <!--fieldset radio --><!--
   <fieldset class="slds-form-element">
-    <legend class="slds-form-element__legend slds-form-element__label">Checkbox Group label</legend>
+    <legend class="slds-form-element__legend slds-form-element__label">Radio Group label</legend>
     <div class="slds-form-element__control">
       <span class="slds-radio">
         <input type="radio" id="radio-1" name="options" value="on"/>
@@ -116,7 +116,7 @@ ad veniam nulla aute est. Labore esse esse cupidatat amet velit id elit consequa
 <div class="slds-backdrop slds-backdrop_open"></div>
 </div>-->
 
-<!--Media Ojbect--> <!--
+<!--Media Ojbect--><!--
 <div class="demo-only slds-size_3-of-4">
 <div class="slds-media">
 <div class="slds-media__figure">
@@ -130,7 +130,7 @@ ad veniam nulla aute est. Labore esse esse cupidatat amet velit id elit consequa
 </div>
 </div>-->
 
-<!--Grid--><!--
+<!--Grid-->
 <div class="slds-grid slds-wrap">
 <div class="slds-col slds-size_1-of-1 slds-large-size_8-of-12">
 <span>1</span>
@@ -139,15 +139,17 @@ ad veniam nulla aute est. Labore esse esse cupidatat amet velit id elit consequa
 <span>2</span>
 </div>
 </div>
-
+<br/>
+<br/>
 <div class="slds-grid slds-wrap">
-<div class="slds-col slds-size_1-of-1 slds-samll-size_1-of-2 slds-medium-size_3-of-4 slds-large-size_8-of-12">
-<span>111</span>
+<div class="slds-col slds-size_1-of-1 slds-samll-size_1-of-2 slds-medium-size_1-of-2 slds-large-size_8-of-12">
+<p>1111</p>
+<p>11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</p>
 </div>
-<div class="slds-col slds-size_1-of-1 slds-samll-size_1-of-2 slds-medium-size_3-of-4 slds-large-size_4-of-12">
+<div class="slds-col slds-nowrap slds-size_1-of-1 slds-samll-size_1-of-2 slds-medium-size_1-of-2 slds-large-size_4-of-12">
 <span>222</span>
 </div>
-</div> -->
+</div>
 
 
 </apex:page>
