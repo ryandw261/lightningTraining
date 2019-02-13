@@ -1,0 +1,11 @@
+<aura:component>
+        <aura:attribute name="height" type="Decimal"/>
+        <aura:attribute name="weight" type="Decimal" default="185"/>
+
+        <aura:handler name="BMIMessage" event="c:BMIMessage" action="{!c.handleBMIEvent}"/>
+    
+        <div class="slds-scope">
+            <c:BMIForm height="{!v.height}" weight="{!v.weight}"></c:BMIForm>
+            <c:BMITable/>
+        </div>
+</aura:component>	

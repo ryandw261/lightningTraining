@@ -14,6 +14,35 @@
            $A.util.addClass(displayBox, 'is-risk');
            $A.util.removeClass(displayBox, 'no-risk'); 
         }
+
+        var compEvent = component.getEvent("BMIMessage");
+        compEvent.setParams({
+            bmiMessageParam : "Message from BMI Form"
+        });
+        compEvent.fire();
+    },
+
+    submitBMI : function(component, event, helper){
+        var action = component.get("c.insertBMI");
+        var bmiRound = Math.round(component.get("v.bmi") * 100) / 100;
+        action.setParams({
+            height : component.get("v.height"),
+            weight : component.get("v.weight"),
+            bmi : bmiRound
+        });
+        console.log(bmiRound);
+
+        action.setCallback(this, function(response){
+            var state = response.getState();
+            if(state === "SUCCESS"){
+                var applicationEvent = $A.get("e.c:BMIInsertEvent");
+				applicationEvent.setParams({
+					"record" : response.getReturnValue()
+				});
+				applicationEvent.fire();
+            }
+        });
+        $A.enqueueAction(action);
     }
 
 })

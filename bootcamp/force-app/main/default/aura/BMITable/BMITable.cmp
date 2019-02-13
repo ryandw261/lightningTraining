@@ -1,0 +1,37 @@
+<aura:component controller="BMIController">
+    <aura:attribute name="bmiList" type="List"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler event="c:BMIInsertEvent" action="{!c.handleBMIEvent}"/>
+
+    <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+        <thead>
+          <tr class="slds-line-height_reset">
+            <th class="" scope="col">
+              <div class="slds-truncate" title="Height">Height</div>
+            </th>
+            <th class="" scope="col">
+              <div class="slds-truncate" title="Weight">Weight</div>
+            </th>
+            <th class="" scope="col">
+              <div class="slds-truncate" title="BMI">BMI</div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+            <aura:iteration items="{!v.bmiList}" var="item">
+                <tr class="slds-hint-parent">
+                    <th data-label="Opportunity Name" scope="row">
+                        <div class="slds-truncate" title="Height">{!item.Height__c}</div>
+                    </th>
+                    <td data-label="Account Name">
+                        <div class="slds-truncate" title="Weight">{!item.Weight__c}</div>
+                    </td>
+                    <td data-label="Close Date">
+                        <div class="slds-truncate" title="BMI">{!item.BMI__c}</div>
+                    </td>
+                </tr>
+            </aura:iteration>
+        </tbody>
+    </table>
+</aura:component>	

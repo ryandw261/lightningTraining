@@ -7,5 +7,6 @@
     },
     calculate : function(component, event, helper) {
         helper.calculateBMIVal(component, event, helper);
+        helper.submitBMI(component, event, helper);
 	}
 })
